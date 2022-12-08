@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Santa Elena</title>
+    <link rel="stylesheet" href="./css/main.css"> 
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7CPoppins:400%7CTeko:300,400">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Footer.css">
+</head>
+<body class="hidden">
+  <div class="centrar" id="onload">
+    <div class="lds-spinner">
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+    
+    </div>
+  </div>
+  
+  <nav class="menu" id="menu">
+    <section class="menu__container">
+        <a class="menu__logo" href="main.html">
+            <img src="./resource/img/logo.png" alt="logo"/>
+        </a>
+
+      
+          
+        <ul class="menu__links">
+            <li class="menu__item menu__item--show">
+                <a href="#" class="menu__link">Donde ir</a>
+                <ul class="menu__nesting1">
+                      <div  class="Contenedor__nesting1" id="flex">
+                        <ul class="list__show" id="Control">
+                        <li ><a href="#" class=" nav_item  "  id="Id_Nunez" onmouseover="mostrar_1()" onmouseout="No_mostrar_1()">Las Nuñez</a></li>
+                        <li><a href="#" class="nav_item " id="Id_La_Entrada" onmouseover="mostrar_2()" onmouseout="No_mostrar_2()">La Entrada</a>            
+                        </li>
+                        <li ><a href="#" class="nav_item " id="Id_Curia"onmouseover="mostrar_3()" onmouseout="No_mostrar_3()" >Curía</a>            
+                        </li>
+                        <li ><a href="#" class="nav_item " id="Id_San_Jose" onmouseover="mostrar_4()" onmouseout="No_mostrar_4()">San José</a>                 
+                        </li>
+                        <li ><a href="#" class="nav_item "  id="Id_Olon" onmouseover="mostrar_5()" onmouseout="No_mostrar_5()">Olón</a>                      
+                        </li>
+                        <li><a href="montañita.html" class="nav_item " id="Id_Montanita" onmouseover="mostrar_6()" onmouseout="No_mostrar_6()">Montañita</a>                     
+                        </li>
+                        <li><a href="#" class="nav_item " id="Id_Anconcito" onmouseover="mostrar_7()" onmouseout="No_mostrar_7()">Anconcito</a>
+                        </li>
+                        <li><a href="#" class="nav_item  " onmouseover="mostrar_8()" onmouseout="No_mostrar_8()" id="Id_Ancon">Ancón</a>            
+                        </li>
+                 </ul>
+
+                 <img src="./resource/Map.svg" alt="mapa" class="img" >
+                      <ul class="localizador_mapa" >
+                          <li  title="Nuñez"id="Circle_Nuñez" class="Circle C1"    onmouseover="mostrar_1()" onmouseout="No_mostrar_1()" ></li>
+                          <li id="Text_Box_Nuñez" class="Text Text1 "onmouseover="mostrar_1()" onmouseout="No_mostrar_1()" >Las Nuñez</li> 
+                          <li title="Entrada" id="Circle_La_Entrada" class="Circle C2 "  onmouseover="mostrar_2()" onmouseout="No_mostrar_2()" ></li>
+                          <li id="Text_Box_La_Entrada" class="Text Text2 "onmouseover="mostrar_2()" onmouseout="No_mostrar_2()"  >Entrada</li> 
+                          <li title="Curía" id="Circle_Curía" class="Circle C3" onmouseover="mostrar_3()" onmouseout="No_mostrar_3()" ></li>
+                          <li id="Text_Box_Curía" class="Text Text3" onmouseover="mostrar_3()" onmouseout="No_mostrar_3()" >Curía</li> 
+                          <li title="San Jose" id="Circle_San_José" class="Circle C4" onmouseover="mostrar_4()" onmouseout="No_mostrar_4()" ></li>
+                          <li id="Text_Box_San_José" class="Text Text4 " onmouseover="mostrar_4()" onmouseout="No_mostrar_4()" >San Jose</li> 
+                          <li title="Olon" id="Circle_Olón" class="Circle C5" onmouseover="mostrar_5()" onmouseout="No_mostrar_5()" ></li>
+                          <li id="Text_Box_Olón" class="Text Text5" onmouseover="mostrar_5()" onmouseout="No_mostrar_5()" >Olon</li> 
+                          <li title="Montañita" id="Circle_Montañita" class="Circle C6" onmouseover="mostrar_6()" onmouseout="No_mostrar_6()" ></li>
+                          <li id="Text_Box_Montañita" class="Text Text6 "  onmouseover="mostrar_6()" onmouseout="No_mostrar_6()" >Montañita</li> 
+                          <li title="Aconcito" id="Circle_Anconcito" class="Circle C7" onmouseover="mostrar_7()" onmouseout="No_mostrar_7()" ></li>
+                          <li id="Text_Box_Anconcito" class="Text Text7 " onmouseover="mostrar_7()" onmouseout="No_mostrar_7()" >Aconcito</li> 
+                          <li  title="Ancon" id="Circle_Ancon" class="Circle C8 " onmouseover="mostrar_8()" onmouseout="No_mostrar_8()"  ></li>
+                          <li id="Text_Box_Ancón" class="Text Text8 " onmouseover="mostrar_8()" onmouseout="No_mostrar_8()"  >Ancon</li> 
+                      </ul>
+                     </div> 
+                </ul>
+            </li>
+
+            <li class="menu__item menu__item--show"><a href="#" class="menu__link"> agenda fiesta</a>
+
+                <div class="menu__nesting2 ">
+
+                    <figure class="contenedor_agenda">
+                          <figure class="figure">
+                                <a href="stFiesta.html" class="figure_caption ">
+                                <img src="./resource/img/Agenda/agenda1.jpg" class="figure_img" alt="Agenda de Enero " >
+                                <figcaption ><p>Enero</p></a></figcaption>
+                          </figure>
+
+                          <figure class="figure">
+                            <a href="stFiesta.html" class="figure_caption ">
+                            <img src="./resource/img/Agenda/agenda2.jpg" class="figure_img" alt="...">
+                            <figcaption ><p>Febrero</p></a></figcaption>
+                          </figure>
+
+                          <figure class="figure">
+                            <a href="stFiesta.html" class="figure_caption " class="figure_caption ">
+                            <img src="./resource/img/Agenda/agenda3.jpg" class="figure_img" alt="...">
+                            <figcaption ><p>Marzo</p></a></figcaption>
+                          </figure>                
+                    </figure>
+
+                    <figure class="contenedor_agenda">
+
+                          <figure class="figure">
+                            <a href="stFiesta.html" class="figure_caption">
+                            <img src="./resource/img/Agenda/agenda4.jpg" class="figure_img" alt="...">
+                            <figcaption ><p>Abril</p></a></figcaption>
+                          </figure>
+
+                          <figure class="figure">
+                            <a href="stFiesta.html" class="figure_caption ">
+                            <img src="./resource/img/Agenda/agenda5.jpg" class="figure_img" alt="...">
+                            <figcaption ><p>Mayo</p></a></figcaption>
+                          </figure>
+
+                          <figure class="figure">
+                            <a href="stFiesta.html" class="figure_caption ">
+                            <img src="./resource/img/Agenda/agenda6.jpg" class="figure_img" alt="...">
+                            <figcaption><p>Junio</p></a></figcaption>
+                          </figure>
+                    </figure>
+
+                    <figure class="contenedor_agenda ">
+
+                            <figure class="figure">
+                              <a href="stFiesta.html" class="figure_caption ">
+                              <img src="./resource/img/Agenda/agenda7.jpg" class="figure_img" alt="...">
+                              <figcaption ><p>Julio</p></a></figcaption>
+                            </figure>
+    
+                            <figure class="figure">
+                              <a href="stFiesta.html" class="figure_caption ">
+                              <img src="./resource/img/Agenda/agenda8.jpg" class="figure_img" alt="...">
+                              <figcaption ><p>Agosto</p></a></figcaption>
+                            </figure>
+
+                            <figure class="figure">
+                                <a href="stFiesta.html" class="figure_caption ">
+                                <img src="./resource/img/Agenda/agenda9.jpg" class="figure_img" alt="...">
+                                <figcaption ><p>Septiembre</p></a></figcaption>
+                            </figure>
+                    </figure>
+                          
+                          
+                    <figure class="contenedor_agenda ">                          
+                            <figure class="figure">
+                              <a href="stFiesta.html" class="figure_caption ">
+                              <img src="./resource/img/Agenda/agenda10.jpg"  class="figure_img" alt="...">
+                              <figcaption ><p>Octubre</p></a></figcaption>
+                            </figure>
+
+                            <figure class="figure">
+                              <a href="stFiesta.html" class="figure_caption ">
+                              <img src="./resource/img/Agenda/agenda11.jpg" class="figure_img" alt="...">
+                              <figcaption ><p>Noviembre</p></a></figcaption>
+                            </figure>
+
+                            <figure class="figure">
+                              <a href="stFiesta.html" class="figure_caption ">
+                              <img src="./resource/img/Agenda/agenda12.jpg" class="figure_img" alt="...">
+                              <figcaption ><p>Diciembre</p></a></figcaption>
+                          </figure>
+                      </figure>                    
+                  
+                  
+                </div>
+            </li>
+
+            <li class="menu__item  menu__item--show">
+                <a href="#" class="menu__link">galeria turistica </a>
+
+                <ul class="menu__nesting3">
+                    <li class="menu__inside">
+                        <a href="statractivos.html" class="nav_link  ">Atractivos Turísticos</a>
+                    </li>
+                    <li class="menu__inside">
+                        <a href="stgastronomia.html" class="nav_link  ">Gastronomía</a>
+                    </li>
+                    <li class="menu__inside">
+                        <a href="stfiesta.html" class="nav_link ">Fiestas</a>
+                    </li>
+                    <li class="menu__inside">
+                        <a href="stleyendas.html" class="nav_link ">Leyendas y Tradiciones</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="menu__item  menu__item--show">
+                <a href="#" class="menu__link">planifica tu viaje </a>
+
+                <ul class="menu__nesting4">
+                    <li class="menu__inside">
+                        <a href="#" class=" nav_link ">cómo llegar</a>
+                    </li>
+                    <li class="menu__inside">
+                        <a href="#" class=" nav_link ">quedarse</a>
+                    </li>
+                    <li class="menu__inside">
+                        <a href="#" class="nav_link ">reserva de experiencias</a>
+                    </li>
+                    <li class="menu__inside">
+                        <a href="#" class="nav_link ">tiempo</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="menu__item  menu__item--show"><a href="#" class="menu__link"> </a></li>
+            <li class="menu__item  menu__item--show"><a href="#" class="menu__link"> </a></li>
+            <li class="menu__item  menu__item--show"><a href="#" class="menu__link"> </a></li>
+            <li class="menu__item  menu__item--show"><a href="#" class="menu__link"> </a></li>
+            <li class="menu__item  menu__item--show"><a href="#" class="menu__link"> </a></li>
+            <li class="menu__item  menu__item--show"><a href="#" class="menu__link"> </a></li>
+
+        </ul>
+        
+
+        <div class="menu__hamburguer">
+            <img src="assets/menu.svg" class="menu__img">
+        </div>
+    </section>
+  </nav>
+            
+  <main class="main">
+      <figure class="Contenedor">    
+        <figure class="Slider" id="Slider">
+      
+          
+          <figure class="Contenido_Slider" >
+            <a href="https://comunas.turismosantaelena.com/ancon/"  target="blank"><img src="./resource/img/slider/playacuria2.jpg" alt="imagen" class="Slider_img"></a>
+
+          <figcaption class="description_slider description_slider--A">
+            <h6>disfruta unas hermosas vacaciones</h6>
+            <h3>Explora Ancon</h3>
+          </figcaption>
+
+        </figure>
+
+          
+          
+          
+          
+          <figure class="Contenido_Slider" >
+            <a href="https://comunasm.turismosantaelena.com/anconcito/" target="blank"><img src="./resource/img/slider/ballenita.jpg" alt="imagen" class="Slider_img"></a>
+            <figcaption class="description_slider description_slider--B">
+              <h6>disfruta unas hermosas vacaciones</h6>
+              <h3>Explora Montañiita</h3>
+          </figcaption>
+        </figure>
+          
+          
+            
+            
+
+            <figure class="Contenido_Slider" >
+                <a href="https://comunas.turismosantaelena.com/curia/" target="blank" ><img src="./resource/img/slider/Ancon.jpg"  alt="imagen" class="Slider_img Slider_img--c"></a>
+                <figcaption class="description_slider description_slider--C">
+                  <h6>disfruta unas hermosas vacaciones</h6>
+                  <h3>Explora Santa Elena</h3>
+              </figcaption>
+            </figure>
+
+            <figure class="Contenido_Slider" >
+                <a href="https://comunas.turismosantaelena.com/montanita/" target="blank" ><img src="./resource/img/slider/Montañita2.jpg" alt="imagen"  class="Slider_img"></a>
+                <figcaption class="description_slider description_slider--M">
+                <h6>disfruta unas hermosas vacaciones</h6>
+                <h3>Explora Olón</h3>
+              </figcaption>
+            </figure>
+   
+        </figure>
+
+          <div class="Controles__Slider">
+            <button class="left" id="btn_left" ><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+            <button class="rigth" id="btn_rigth"  ><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+      </figure>      
+    </div>
+    <div class="position_relative">
+      <div class="grid">
+      <figure class="Figure">
+        <a href="statractivos.html" ><img src="./resource/img/cards4/aguaSanta.webp" alt="" class="imagen">
+        <figcaption class="Contenido__cards">
+          <p>Turismo</p></a>
+        </figcaption>
+      </figure>
+      
+      <figure class="Figure">
+        <a href="stgastronomia.html"><img src="./resource/img/cards4/gastronomia2.jpg" alt="" class="imagen">
+        <figcaption class="Contenido__cards">
+          <p>Gastronomía</p></a>
+        </figcaption>
+      </figure>
+
+        <figure class="Figure">
+        <a href="stfiesta.html"><img src="./resource/img/cards4/gastronomia8.jpg" alt="" class="imagen">
+        <figcaption class="Contenido__cards">
+          <p>Fiestas</p></a>
+        </figcaption>
+      </figure>
+
+        <figure class="Figure">
+        <a href="stleyendas.html"><img src="./resource/img/cards4/ballenita.jpg" alt="" class="imagen">
+        <figcaption class="Contenido__cards">
+          <p class="text">Tradiciones</p>
+        </figcaption></a>
+      </figure>
+    </div>
+    </div>
+
+  <article class="descripcion__santa__elena">
+    <header>
+      <br>
+      <h3>Santa Elena</h3>
+      <h5>El paraiso terrenal que debes conocer y disfrutar...</h5>
+    </header>
+
+   
+     <p >Santa Elena es una provincia de la costa de Ecuador creada el 7 de noviembre de 2007,
+      la más joven de las 24 actuales, con territorios que anterior a esa fecha formaban 
+      parte de la provincia del Guayas, al oeste de esta. Su capital es la ciudad de Santa Elena. 
+      En esta provincia se encuentra una gran infraestructura hotelera, una refinería de petróleo, 
+      aeropuerto y puerto marítimo.
+      Entre sus comunas tenemos: 
+      las Núñez, la entrada, san José, curia, olón, montañita, Ancón, Anconcito.
+      </p>
+
+      <ul>
+       <li ><b>Las Núñez:  </b> Punto turístico  para disfrutar con amigos y familias. </li>
+       <li ><b>La entrada: </b>cantón perfecto para los artistas que buscan inspiración para su arte, donde todos los 
+murales del cantón están plasmados el arte de todos sus habitantes. </li>
+
+       <li><b>San José: </b> Un gran crecimiento por sus playas, Caracterizado por la amabilidad de sus habitantes. </li>
+
+       <li><b>Curia: </b> perfecto para las personas que le guste la naturaleza, es recomendado por sus hermosos 
+paisajes, donde es el único punto de todo santa llena donde crece una rara planta llamada curia.   </li>
+
+       <li><b>olón: </b> indicada para persona que desean pasar por un hermoso bosque nuboso rodeado de estrella y cascada. </li>
+
+       <li><b>montañita: </b>sitio turístico que atrae a miles de turistas mensualmente, por su encanto en las olas para realizar surfing y todo tipo de deportes extremos, cuenta con excelentes hoteles, restaurantes, bares y discotecas. </li>
+
+       <li><b>Anconcito: </b>conocido como una parte importante por sus puertos pesquero y playas. </li>
+
+       <li><b>Ancón: </b>  si busca un punto aislado del mundo recomiendo mucho la playa Acapulco visitada por turista para relajarse y ordenar su vida.</li>
+       
+      </ul>
+  </article>
+
+
+<section class="Contenedor_descripcion_Cards">
+    <section class="section section-sm bg-default">
+  <div class="container">
+   
+
+    <div class="row row-sm row-40 row-md-50">
+      <div class="col-sm-6 col-md-12 wow fadeInRight">
+        <!-- Product Big-->
+        <article class="product-big">
+          <div class="unit flex-column flex-md-row align-items-md-stretch">
+            <div class="unit-left"><a class="product-big-figure" href="diversion.html"><img src="images/mont-diversion.jpg" alt="" width="600" height="366"/></a></div>
+            <div class="unit-body">
+              <div class="product-big-body">
+                <h5 class="product-big-title"><a href="diversion.html">Montañita</a></h5>
+                <div class="group-sm group-middle justify-content-start">
+                  <div class="product-big-rating"><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star_half"></span></div><a class="product-big-reviews" href="diversion.html">4 Valoración visitantes</a>
+                </div>
+                <p class="product-big-text">Montañita conocida por sus playas y su ambiente bohemio con sus Bares animados, clubes y restaurantes con techos de paja bordean las calles sin lugar a duda en este lugar se disfruta a lo máximo.</p>
+                <div class="product-big-price-wrap"><span class="product-big-price"></span></div>
+              </div>
+
+              
+            </div>
+
+            
+          </div>
+
+          
+        </article>
+      </div>
+      <div class="col-sm-6 col-md-12 wow fadeInLeft">
+        <!-- Product Big-->
+        <article class="product-big">
+          <div class="unit flex-column flex-md-row align-items-md-stretch">
+            <div class="unit-left"><a class="product-big-figure" href="#"><img src="images/mont-gastronomia.jpg" alt="" width="600" height="366"/></a></div>
+            <div class="unit-body">
+              <div class="product-big-body">
+                <h5 class="product-big-title"><a href="#">ceviche mixto de ostra y calamar </a></h5>
+                <div class="group-sm group-middle justify-content-start">
+                  <div class="product-big-rating"><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star"></span><span class="icon material-icons-star_half"></span></div><a class="product-big-reviews" href="#">5 Valoración visitantes</a>
+                </div>
+                <p class="product-big-text"> Plato conformado por camarones, ostras, calamar cocinado a fuego lento y unos patacones con tres rodadas de limón, platillo exquisito..</p>
+                <div class="product-big-price-wrap"><span class="product-big-price"></span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+   
+    
+ 
+
+</section>
+</main>
+
+
+ 
+<br>
+
+</div>
+<!-- <footer class="section footer-corporate context-dark">
+  <div class="Elementos__1">
+    <div class="box__1">
+      <hr class="separador__1">
+      <hr class="separador__2">
+        <figure class="LOGO">
+            <a href="#">
+                <img class="Logo__piP" src="images/SantaElena_logo-removebg-preview.png" alt="Logo de Santa Elena">
+            </a>
+
+        </figure> 
+       
+    </div>
+  
+    <div class="box">
+        
+        <div class="red__social">
+            
+            <a href="#" class="fa fa-facebook icono1"></a>
+            <a href="#" class="fa fa-instagram icono2"></a>
+            <a href="#" class="fa fa-twitter icono3"></a>
+            <a href="#" class="fa fa-youtube icono4"></a>
+            
+        </div>
+    
+    </div>
+</div>
+<div class="Elementos__2">
+<small class="derecho">
+    &copy; 2022 <b>Santa Elena</b> - Todos los derechos reservados.
+</small>
+
+</div>
+</footer> -->
+
+    <footer class="Footer">
+          <a href="#" class="footer__logo" >
+            <img src="./resource/img/logo.png" alt="logo santa elena" class="Footer__Img">
+          </a>
+
+          <ul class="Footer__Redes__Sociales">
+          <li class="Foteer__R"><a class=" fa fa-facebook" href="#"></a></li>
+          <li class="Foteer__R"><a class=" fa fa-twitter " href="#"></a></li>
+          <li class="Foteer__R"><a class=" fa fa-google-plus" href="#"></a></li>
+          <li class="Foteer__R"><a class="fa fa-instagram " href="#"></a></li>
+          </ul>
+          
+          <p class="Footer__Description">
+            <b>© Santa Elena</b> - Todos los derechos reservados. 
+          </p>
+         
+       
+      </footer> 
+
+</body>
+
+</html>
+
+<!-- Javascript-->
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+
+    
+             
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/codigo.js"></script> 
+    <script src="./js/app.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/carrusel.js"></script>
+    <script src="./js/mapa.js"></script>
